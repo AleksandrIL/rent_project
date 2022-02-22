@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+.SignUp {
+    position: absolute;
+    top: 100px;
+    left: 510px;
+    width: 900px;
+    height: 500px;
+    background: #0f4c81 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.ETM{
+    position: relative;
+    top: 25px;
+    left: 820px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background-color: #0f4c81;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font: medium font-size-60 line-spacing-73;
+    font-family: montserrat, serif;
+    font-size: 60px;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.radio{
+    position: relative;
+    left: 240px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+.custom-radio+label {
+    display: inline-flex;
+    justify-content: space-between;
+    user-select: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio+label::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+
+.BtnNS{
+    position: relative;
+    left: 220px;
+    width: 120px;
+    height: 40px;
+    color: #0f4c81;
+    text-align: center;
+    font: normal normal normal 16px/19px Montserrat;
+    border: 0px #FFFFFF solid;
+    border-radius: 5px;: 0px;
+    opacity: 1;
+
+}
+
+.BtnNS:hover{
+    box-shadow: 0 0 10px 1px #FFFFFF;
+    transition: 0.2s;
+}
+
+.BtnCancel{
+    width: 120px;
+    height: 40px;
+    font: normal normal medium Montserrat;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background-color: #0f4c81;
+    border: none;
+}
+
+.BtnCancel:hover{
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.btn{
+    display: inline;
+    position: relative;
+    top: 70px;
+    left: 200px;
+    gap: 12rem;
+    margin-top: 40px;
+    width: 400px;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    opacity: 20%;
+    font-size: 18px;
+}
+
+.Inp{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 1rem;
+}
+
+input{
+    width: 420px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    font-size: 24px;
+}
